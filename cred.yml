@@ -5,3 +5,4 @@
     - name: Show AWS Access Key ID
       debug:
         msg: "{{ env.AWS_ACCESS_KEY_ID }}"
+      ignore_errors: yes
