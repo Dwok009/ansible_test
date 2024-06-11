@@ -1,0 +1,7 @@
+---
+- name: Test vaulted AWS credentials
+  hosts: localhost
+  tasks:
+    - name: Show AWS Access Key ID
+      debug:
+        msg: "{{ env.AWS_ACCESS_KEY_ID }}"
